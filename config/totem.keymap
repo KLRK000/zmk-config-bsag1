@@ -106,7 +106,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
             &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U              &kp I            &kp O         &kp P 
             &hml LCTRL A  &hml LALT S   &hml LGUI D      &hml LSHFT F     &kp G              &kp H         &hmr RSHFT J       &hmr RGUI K      &hmr LALT L   &hmr RCTRL SEMI
 &kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M         &hmr_meh MEH COMMA   &dot_morph    &qexcl        &kp TAB
-                                        &lt UTIL TAB     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
+                                        &lt UTIL TAB     &lt NAV SPACE    &sk LSHFT          &lt UTIL TAB        &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
@@ -135,7 +135,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         };
         util_layer {
             bindings = <
-            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           ___
+            &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2    &bt BT_CLR      ___                ___           ___               &kp C_VOL_UP    ___           &bt BT_CLR 
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT      ___                ___           ___                &kp C_VOL_DN    ___           ___ 
     ___     ___          ___          ___             &kp HYP        ___                ___           ___               ___             ___           ___             ___
                                       ___             ___             ___                ___           ___               &kp C_MUTE
