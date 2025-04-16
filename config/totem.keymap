@@ -103,7 +103,7 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         compatible = "zmk,keymap";
         default_layer { // ColemakDHm
             bindings = <
-            &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U              &kp I            &kp O         &kp P 
+            &bt BT_CLR         &kp W         &kp E            &kp R            &kp T              &bt BT_CLR         &kp U              &kp I            &kp O         &kp P 
             &hml LCTRL A  &hml LALT S   &hml LGUI D      &hml LSHFT F     &kp G              &kp H         &hmr RSHFT J       &hmr RGUI K      &hmr LALT L   &hmr RCTRL SEMI
 &kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M         &hmr_meh MEH COMMA   &dot_morph    &qexcl        &kp TAB
                                         &lt UTIL TAB     &lt NAV SPACE    &sk LSHFT          &lt UTIL TAB        &lt NUM BSPC       &lt FUN DEL
