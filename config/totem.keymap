@@ -16,6 +16,7 @@
 #define NUM 2
 #define FUN 3
 #define UTIL 4
+#define CDHM 5
 
 #include "combos.dtsi"
 
@@ -101,17 +102,17 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
 // TODO: Add hyper key as HRM
     keymap {
         compatible = "zmk,keymap";
-        default_layer { // ColemakDHm
+        default_layer { // BASE
             bindings = <
-            &kp Q         &kp W         &kp F            &kp P            &kp B              &kp J         &kp L              &kp U            &kp Y         &kp APOS 
-            &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G              &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
-&kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp TAB
+            &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U              &kp I            &kp O         &kp P 
+            &hml LCTRL A  &hml LALT S   &hml LGUI D      &hml LSHFT F     &kp G              &kp H         &hmr RSHFT J       &hmr RGUI K      &hmr LALT L   &hmr RCTRL SEMI
+&kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp RET
                                         &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
             bindings = <
-            ___          ___          ___             ___             ___                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
+            ___          ___          ___             ___             &lt CDHM SPACE                ___           &kp HOME          &kp UP          &kp END       &kp PAGE_UP 
             &kp LCTRL     &kp LALT     &kp LGUI       &kp LSHFT       ___                ___           &kp LEFT          &kp DOWN        &kp RIGHT     &kp PAGE_DOWN
     BACK    ___           ___          &kp MEH         &kp HYP         ___                ___          &kp TILDE         ___             &kp FSLH      ___             FWD
                                        ___            ___             ___                &kp RET       &kp BSPC          &kp DEL
@@ -141,6 +142,14 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
                                       ___             ___             ___                ___           ___               &kp C_MUTE
             >;
         };  
+    ColemakDHm {
+            bindings = <
+            &kp Q         &kp W         &kp F            &kp P            &kp B              &kp J         &kp L              &kp U            &kp Y         &kp APOS 
+            &hml LCTRL A  &hml LALT R   &hml LGUI S      &hml LSHFT T     &kp G              &kp M         &hmr RSHFT N       &hmr RGUI E      &hmr LALT I   &hmr RCTRL O
+&kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP D       &kp V              &kp K         &hmr HYP H         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp TAB
+                                        &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
+            >;
+        };
     };
 };
     
