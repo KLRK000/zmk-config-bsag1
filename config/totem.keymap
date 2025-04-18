@@ -105,9 +105,9 @@ ZMK_BEHAVIOR(dot_morph, mod_morph,
         default_layer { // BASE
             bindings = <
             &kp Q         &kp W         &kp E            &kp R            &kp T              &kp Y         &kp U              &kp I            &kp O         &kp P 
-            &hml LCTRL A  &hml LALT S   &hml LGUI D      &hml LSHFT F     &kp G              &kp H         &hmr RSHFT J       &hmr RGUI K      &hmr LALT L   &hmr RCTRL SEMI
+            &hml LCTRL A  &hml LALT S   &hml LGUI D      &hml LSHFT F     &kp G              &kp H         &hmr RSHFT J       &hmr RGUI K      &hmr LALT L   &hmr RCTRL APOS
 &kp TAB    &kp Z         &kp X         &hml MEH C       &hml HYP V       &kp B              &kp N         &hmr HYP M         &hmr_meh MEH 0   &dot_morph    &qexcl        &kp RET
-                                        &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &kp RET       &lt NUM BSPC       &lt FUN DEL
+                                        &lt UTIL ESC     &lt NAV SPACE    &sk LSHFT          &lt CDHM RET       &lt NUM BSPC       &lt FUN DEL
             >;
         };
         nav_layer { 
