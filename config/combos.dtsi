@@ -21,6 +21,7 @@
 
 // Left hand vertical combos //
 // Between top and home row
+ZMK_COMBO(excl,  &kp EXCL,    LT4 LM4,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(at,    &kp AT,        LT3 LM3,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(hash,  &kp HASH,      LT2 LM2,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(dllr,  &kp DLLR,      LT1 LM1,     BASE NAV NUM, COMBO_TERM_SLOW)
@@ -36,25 +37,27 @@ ZMK_COMBO(tilde, &kp TILDE,     LM0 LB0,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(cut,   &kp LG(X),     LB3 LB1,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(copy,  &kp LG(C),     LB3 LB2,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(paste, &kp LG(V),     LB2 LB1,     BASE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(left,  &kp LEFT,      LB1 LB0,     BASE NAV NUM, COMBO_TERM_FAST)
 
 // Right hand vertical combos
 // Between top and home row
 ZMK_COMBO(caret, &kp CARET,     RT0 RM0,     BASE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(plus,  &kp PLUS,      RT1 RM1,     BASE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(amps,  &kp AMPS,      RT1 RM1,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(star,  &kp STAR,      RT2 RM2,     BASE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(amps,  &kp AMPS,      RT3 RM3,     BASE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(plus,  &kp PLUS,      RT3 RM3,     BASE NAV NUM, COMBO_TERM_SLOW)
 
 // Between home and bottom row
-ZMK_COMBO(under, &kp UNDER,     RM0 RB0,     BASE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(minus, &kp MINUS,     RM1 RB1,     BASE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(pipe,  &kp PIPE,      RM0 RB0,     BASE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(under, &kp UNDER,     RM1 RB1,     BASE NAV NUM, COMBO_TERM_SLOW)
 ZMK_COMBO(fslh,  &kp FSLH,      RM2 RB2,     BASE NAV NUM, COMBO_TERM_SLOW)
-ZMK_COMBO(pipe,  &kp PIPE,      RM3 RB3,     BASE NAV NUM, COMBO_TERM_SLOW)
+ZMK_COMBO(minus, &kp MINUS,     RM3 RB3,     BASE NAV NUM, COMBO_TERM_SLOW)
 
 // Horizontal combos
 ZMK_COMBO(lbkt,  &kp LBKT,      RT1 RT2,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rbkt,  &kp RBKT,      RT2 RT3,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lpar,  &kp LPAR,      RM1 RM2,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rpar,  &kp RPAR,      RM2 RM3,     BASE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(right, &kp RIGHT,     RB0 RB1,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lbrc,  &kp LBRC,      RB1 RB2,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(rbrc,  &kp RBRC,      RB2 RB3,     BASE NAV NUM, COMBO_TERM_FAST)
 ZMK_COMBO(lt,    &kp LT,        RM0 RM1,     BASE NAV NUM, COMBO_TERM_FAST)
@@ -63,3 +66,5 @@ ZMK_COMBO(gt,    &kp GT,        RM3 RM4,     BASE NAV NUM, COMBO_TERM_FAST)
 
 // caps word on index fingers
 ZMK_COMBO(capsw, &caps_word,    LM1 RM1,     BASE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(up,    &kp UP,        LM0 RM0,     BASE NAV NUM, COMBO_TERM_FAST)
+ZMK_COMBO(down,  &kp DOWN,      LB0 RB0,     BASE NAV NUM, COMBO_TERM_FAST)
